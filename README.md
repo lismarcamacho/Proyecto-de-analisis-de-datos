@@ -2,8 +2,12 @@
 Basado en el tutorial https://learn.microsoft.com/en-us/power-bi/connect-data/desktop-python-visuals
 <img width="1152" height="720" alt="python-POWERBI" src="https://github.com/user-attachments/assets/f2306ad3-84b7-4567-b37b-cb3a529553ff" />
 
-Obtener datos - script de python : dataset a importar: 
+Obtener datos - script de python :
 
+### DataFrame a importar: 
+
+
+``` 
 import pandas as pd 
 df = pd.DataFrame({ 
     'Fname':['Harry','Sally','Paul','Abe','June','Mike','Tom'], 
@@ -15,11 +19,11 @@ df = pd.DataFrame({
     'Pets':[3,2,2,5,0,1,5] 
 }) 
 print (df)
-
+``` 
 NOTA: 
 para poder ejecutar cada script de python de cada grafico es necesario que los valores que se usan en cada grafico no esten "resumidos"
 
-1 script por grafico
+### 1 script por grafico
 
 ### Grafico de barras
 ``` import matplotlib.pyplot as plt 
