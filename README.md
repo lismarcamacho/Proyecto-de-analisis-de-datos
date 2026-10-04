@@ -21,19 +21,29 @@ para poder ejecutar cada script de python de cada grafico es necesario que los v
 
 1 script por grafico
 
-import matplotlib.pyplot as plt 
+### Grafico de barras
+``` import matplotlib.pyplot as plt 
 dataset.plot(kind='bar',x='Fname',y='Age')
-- # plt.title('Grafico de barras') # <- Añade esta línea exactamente aquí 
+# plt.title('Grafico de barras') # <- Añade esta línea exactamente aquí 
 plt.show()
+```
 
+### Gráfico de líneas
+
+```
 import matplotlib.pyplot as plt 
 ax = plt.gca() 
 dataset.plot(kind='line',x='Fname',y='Children',ax=ax) 
 dataset.plot(kind='line',x='Fname',y='Pets', color='red', ax=ax) 
-- # plt.title('Grafico de lineas') # <- Añade esta línea exactamente aquí
+# plt.title('Grafico de lineas') # <- Añade esta línea exactamente aquí
 plt.show()
+```
 
+### Grafico de dispersion 
+
+```
 import matplotlib.pyplot as plt 
 dataset.plot(kind='scatter', x='Age', y='Weight', color='red', )
-- # plt.title('Grafico de dispersion') # <- Añade esta línea exactamente aquí
+# plt.title('Grafico de dispersion') # <- Añade esta línea exactamente aquí
 plt.show()
+```
